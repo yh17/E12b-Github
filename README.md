@@ -151,4 +151,6 @@ followed by
 
 These are the areas you will need to edit. Remove the Development2 changes (including the <<<<< and ===== lines), and press the "Mark as Resolved" button.
 
+In a collaborative project, multiple people can Clone a single repository. If each of them is working in their own branch, then the repository owner can assume the responsibility of merging those changes back to the main branch. This is one possible model for collaborating on a single repository.
+
 When you have completed the exercise, update the LICENSE and README.md, and turn in the URL of your repository on Canvas.
