@@ -151,4 +151,4 @@ followed by
 
 These are the areas you will need to edit. Remove the Development2 changes (including the <<<<< and ===== lines), and press the "Mark as Resolved" button.
 
-When you have completed the exercise, turn in the URL of your repository on Canvas.
+When you have completed the exercise, update the LICENSE and README.md, and turn in the URL of your repository on Canvas.
