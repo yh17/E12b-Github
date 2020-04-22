@@ -63,13 +63,13 @@ Save the file, quit Godot, and return to Github Desktop. Commit your changes to 
 
 If you click on the Current Branch button, you can change it back to Master. If you look in the folder on your computer where your project is saved, you should see that the Player.gd file is no longer there. It hasn't been deleted, it is just associated with a different branch of your code which is not currently selected.
 
-Click the Current Branch button and select Development again. Push your changes to Github.
+Click the Current Branch button and select Development again. Publish the branch (where the push button normally is) to Github.
 
 Go to github.com, and  just above the file view, you should see an indicator that there are 2 branches. If you select that, you should see the master and the Development branch listed; next to the Development branch, you should see a "New pull request" button. Select that now.
 
-The pull request page should say that this branch is able to merge, and you should see a form with your commit summary (as well as any comments you left). Leave any addition comments you would like to, and press "Create pull request".
+The pull request page should say that this branch is able to merge, and you should see a form with your commit summary (as well as any comments you left). Leave any addition comments you would like to, and press "Create pull request". Confirm the request.
 
-This will take you to the Pull Request page, in which you will have the opportunity to merge the code from the Development branch in to the master branch. There are no conflicts, so you can do so with the "Merge pull request" button.
+This will take you to the Pull Request page, which merges the code from the Development branch in to the master branch. There are no conflicts, so it has merged and closed the pull request.
 
 Now, go back to Github Desktop and select the master branch. In the Branch menu, create a New Branch. Call this branch Development2.
 
@@ -131,11 +131,11 @@ func _unhandled_input(event):
 		rotate_y(-event.relative.x * mouse_sensitivity)
 ```
 
-Save the file, and quit Godot. In Github Desktop, commit your changes, and push them back to Github.
+Save the file, and quit Godot. In Github Desktop, commit your changes, and publish them back to Github.
 
-Go to github.com, and  just above the file view, you should see an indicator that there are now 3 branches. On the branch page, next to the Development2 branch, you should see a "New pull request" button. Select that now.
+Go to github.com, and go to the repository page. Just above the file view, you should see an indicator that there are now 3 branches. On the branch page, next to the Development2 branch, you should see a "New pull request" button. Select that now.
 
-The pull request page should say that this branch is able to merge, and you should see a form with your commit summary (as well as any comments you left). Leave any addition comments you would like to, and press "Create pull request".
+The pull request page should say that this branch can't automatically merge, but you should still see a form with your commit summary (as well as any comments you left). Leave any addition comments you would like to, and press "Create pull request".
 
 This will take you to the Pull Request page, in which you will have the opportunity to merge the code from the Development branch in to the master branch. You should see that "This branch has conflicts that must be resolved". Press the "Resolve Conflicts" button.
 
@@ -149,8 +149,10 @@ followed by
 >>>>>> master
 ```
 
-These are the areas you will need to edit. Remove the Development2 changes (as well as the <<<<< and ===== lines), and press the "Mark as Resolved" button.
+These are the areas you will need to edit. Remove the Development2 changes (as well as the <<<<< and ===== lines), and press the "Mark as Resolved" button. Then press the "Commit merge" button.
 
-In a collaborative project, multiple people can Clone a single repository. If each of them is working in their own branch, then the repository owner can assume the responsibility of merging those changes back to the main branch. This is one possible model for collaborating on a single repository.
+You should now be back on the Pull Request page and see that This branch has no conflicts with the base branch. Press the "Merge pull request" button. Confirm the merge.
+
+This is one possible model for collaborating on a single repository. In a collaborative project, multiple people can Clone a single repository. If each of them is working in their own branch, then the repository owner can assume the responsibility of merging those changes back to the main branch. 
 
 When you have completed the exercise, update the LICENSE and README.md, and turn in the URL of your repository on Canvas.
